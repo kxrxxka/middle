@@ -4,11 +4,10 @@ using namespace std;
 void itc_num_print(int number) {
 
     cout << number << endl;
-
 }
 
 int itc_len_num(long long number) {
-
+    
     int num = 0;
     while (number > 0) {
         number = number / 10;
