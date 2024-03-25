@@ -16,12 +16,3 @@ int itc_min_num(long long number) {
 
 
 }
-
-int_rev_num(long long number) {
-
-
-
-
-
-
-}
