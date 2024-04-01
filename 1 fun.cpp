@@ -22,15 +22,19 @@ int itc_len_num(long long number) {
 }
 
 int itc_sum_num(long long number) {
-
-    int num;
-    int sum = 0;
-    while (number > 0) {
-        num = number % 10;
-        sum = sum + num;
+    
+  int num = 0;
+    
+    while (number != 0) {
+        num = num + number % 10;
         number = number / 10;
     }
-    return sum;
+    
+    if (num < 0) {
+        num = num * (-1);
+    }
+    
+    return num;
 
 }
 
