@@ -9,14 +9,14 @@ void itc_num_print(int number) {
 int itc_len_num(long long number) {
     
     int num = 0;
-    while (number != 0) {
-        number = number / 10;
-        num++;
-    }
-    
+
     if (number == 0) {
         num = 1;
     }
+    while (number != 0) {
+        number = number / 10;
+        num++;
+    }  
     return num;
 
 }
