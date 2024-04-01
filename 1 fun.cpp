@@ -40,14 +40,26 @@ int itc_sum_num(long long number) {
 
 long long itc_multi_num(long long number) {
 
-    int num;
-    int mult = 1;
-    while (number > 0) {
-        num = number % 10;
-        mult = mult * num;
+      int mult = 1;
+    
+    if (number == 0) {
+        mult = 0;
+    
+    }
+    
+     while (number != 0) {
+        mult = mult * (number % 10);
         number = number / 10;
     }
+    
+    if (number < 0) {
+        number = number * (-1);
+    }
+    
     return mult;
+   
+
+}
 
 }
 
