@@ -61,7 +61,6 @@ long long itc_multi_num(long long number) {
 
 }
 
-}
 
 int itc_max_num(long long number) {
 
