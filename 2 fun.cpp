@@ -20,3 +20,23 @@ int itc_min_num(long long number) {
     }
     return minn;
 }
+
+int itc_rev_num(long long number) {
+    
+   if (number <= 0) {
+       return -1;
+   }
+   
+   long long num;
+   long long numn;
+   numn = 0;
+   while(number > 0) {
+       num = number % 10;
+       numn = numn * 10;
+       numn = numn + num;
+       number = number / 10;
+       
+   }
+   
+   return numn;
+}
