@@ -40,14 +40,13 @@ int itc_sum_num(long long number) {
 
 long long itc_multi_num(long long number) {
 
-      int mult = 1;
+       int mult = 1;
+      
+      if (number <= 0) {
+          return -1;
+      }
     
-    if (number == 0) {
-        mult = 0;
-    
-    }
-    
-     while (number != 0) {
+     while (number > 0) {
         mult = mult * (number % 10);
         number = number / 10;
     }
@@ -57,25 +56,21 @@ long long itc_multi_num(long long number) {
     }
     
     return mult;
-   
-
+    
 }
 
 
 int itc_max_num(long long number) {
 
-  int maxx = -1;
+ int maxx = 0;
     long long num;
     
-    if (number == 0) {
-        maxx = 0;
+    if (number <= 0) {
+        return -1;
     }
     
-    if (number < 0) {
-        number = number * (-1);
-    }
     
-    while (number != 0) {
+    while (number > 0) {
         num = number % 10;
         if (num > maxx) {
             maxx = num;
@@ -83,9 +78,6 @@ int itc_max_num(long long number) {
         number = number / 10;
     }
     return maxx;
-
-}
-
 
 }
 
