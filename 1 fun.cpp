@@ -63,11 +63,17 @@ long long itc_multi_num(long long number) {
 
 int itc_max_num(long long number) {
 
+ 
  int maxx = 0;
-    long long num;
+ long long num;
     
-    if (number <= 0) {
+   
+    if (number == 0){
         return -1;
+    }
+    
+    if (number < 0){
+        number = number * (-1);
     }
     
     
