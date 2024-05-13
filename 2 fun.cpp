@@ -12,7 +12,7 @@ int itc_min_num(long long number) {
 
     while (number > 0) {
         num = number % 10;
-    }
+    
         if (num < minn) {
             minn = num;
         }
