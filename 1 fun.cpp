@@ -62,22 +62,15 @@ long long itc_multi_num(long long number) {
 
 
 int itc_max_num(long long number) {
-
  
  int maxx = 0;
  long long num;
     
-   
     if (number == 0){
-        return -1;
+        return 0;
     }
     
-    if (number < 0){
-        number = number * (-1);
-    }
-    
-    
-    while (number > 0) {
+    while (number != 0) {
         num = number % 10;
         if (num > maxx) {
             maxx = num;
