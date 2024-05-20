@@ -35,11 +35,7 @@ int itc_rev_num(long long number){
 int n = 0;
 long long num = 0;
 
-if (number <= 0) {
-    return -1;
-}
-
-while (number > 0){
+while (number != 0){
     
     num = number % 10;
     n = n * 10;
