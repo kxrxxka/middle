@@ -37,9 +37,6 @@ return maxx2;
 }
 }
 
-}
-
-
 long long itc_bin_num(long long number) {
     
 long long ost = 0;
