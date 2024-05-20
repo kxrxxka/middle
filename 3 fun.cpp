@@ -100,4 +100,29 @@ int itc_rev_bin_num(long long number) {
       return num;
 }
 
+int itc_rev_oct_num(long long number) {
+    
+    int num1 = 1;
+    
+    long long n = 0;
+    long long num = 0;
+    long long a = 0;
+    
+    
+    while (number != 0) {
+        
+        while ((a + n) > 0) {
+            
+            num1 = num1 * 8;
+            a = a - 1;
+        }
+        
+        num = num + ((number % 10) * (num1));
+        number = number / 10;
+        n = n + 1;
+}
+      return num;
+}
+
+
 
