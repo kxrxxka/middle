@@ -17,7 +17,7 @@ if (number / 10 == 0) {
 }
 
 else {
-    while (number > 0) {
+    while (number != 0) {
 
         n = number % 10;
 
@@ -34,7 +34,7 @@ else {
     }
 
 return maxx2;
-
+}
 }
 
 }
