@@ -1,4 +1,5 @@
 #include <iostream>
+#include "middle.h"
 using namespace std;
 
 int itc_min_num(long long number) {
