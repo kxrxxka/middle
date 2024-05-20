@@ -54,3 +54,21 @@ return num / 10;
 
 }
 
+long long itc_oct_num(long long number) {
+    
+long long ost = 0;
+long long dv = 10;
+long long num = 0;
+
+while (number > 0) {
+    
+    ost = number % 8;
+    number = number / 8;
+    num = (dv * ost) + num;
+    dv = dv * 10;
+}
+
+return num / 10;
+
+}
+
