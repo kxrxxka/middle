@@ -35,3 +35,22 @@ return maxx2;
 
 }
 
+
+long long itc_bin_num(long long number) {
+    
+long long ost = 0;
+long long dv = 10;
+long long num = 0;
+
+while (number > 0) {
+    
+    ost = number % 2;
+    number = number / 2;
+    num = (dv * ost) + num;
+    dv = dv * 10;
+}
+
+return num / 10;
+
+}
+
