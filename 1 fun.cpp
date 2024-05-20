@@ -70,6 +70,11 @@ int itc_max_num(long long number) {
     if (number == 0){
         return 0;
     }
+
+     if (number < 0){
+    number = number * (-1);
+}
+    
     
     while (number != 0) {
         num = number % 10;
