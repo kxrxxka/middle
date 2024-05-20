@@ -1,3 +1,7 @@
+#include <iostream>
+#include "middle.h"
+using namespace std;
+
 int itc_second_max_num(long long number) {
 
 int n = 0;
