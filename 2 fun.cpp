@@ -51,7 +51,7 @@ return itc_len_num(n);
 
 }
 
-itc_null_count(long long number){
+int itc_null_count(long long number){
     
 int num = 0;
 
@@ -75,7 +75,7 @@ return num;
 
 }
 
-itc_mirror_num(long long number){
+bool itc_mirror_num(long long number){
     
 int n = 0;
 long long num = 0;
