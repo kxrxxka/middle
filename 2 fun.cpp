@@ -38,8 +38,7 @@ long long num = 0;
 while (number != 0){
     
     num = number % 10;
-    n = n * 10;
-    n = n + num;
+    n = (n * 10) + num;
     number = number / 10;
 }
 
