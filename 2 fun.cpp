@@ -37,12 +37,12 @@ long long num = 0;
 
 while (number != 0){
     
-    num = number % 10;
-    n = (n * 10) + num;
+    n = number % 10;
+    num = (num * 10) + n;
     number = number / 10;
 }
 
-return itc_len_num(n);
+return itc_len_num(num);
 
 }
 
